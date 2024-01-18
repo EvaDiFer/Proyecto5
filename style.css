@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+:root {
+  --color-1: #efa7a7;
+  --color-2: #abd1c6;
+  --color-3: #a5ede9;
+  --color-4: #eb127e;
+  --bg-color: #004643;
+
+  /* SPACINGS */
+  --margin-xs: 10px;
+  --margin-s: 20px;
+  --margin-m: 30px;
+  --margin-l: 40px;
+  --margin-xl: 50px;
+  --margin-section: 100px;
+
+  --padding-xxs: 5px;
+  --padding-xs: 10px;
+  --padding-s: 20px;
+  --padding-m: 30px;
+  --padding-l: 40px;
+  --padding-xl: 50px;
+
+  --gap-xs: 10px;
+  --gap-s: 20px;
+  --gap-m: 30px;
+  --gap-l: 40px;
+  --gap-xl: 50px;
+
+  /* BORDER RADIUS */
+  --primary-br: 10px;
+  --secondary-br: 20px;
+
+  /* FONTS */
+  --font-size-pri: 5rem;
+  --font-size-sec: 3.5rem;
+  --font-size-ter: 1.6rem;
+  --font-size-four: 1.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  background-color: var(--color-3);
+  color: var(--color-1);
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-m);
+  margin-top: 8vh;
+  margin-bottom: var(--padding-s);
+  min-height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}

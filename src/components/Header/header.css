@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  margin-top: 5px;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: var(--color-3);
+  width: 100%;
+  z-index: 2;
+}
+header button {
+  padding: var(--padding-xxs) var(--padding-xs);
+  border: none;
+  font-size: var(--font-size-ter);
+  cursor: pointer;
+  color: var(--color-1);
+  background-color: var(--color-4);
+}
+header button:hover {
+  background-color: var(--color-1);
+  color: var(--color-2);
+}
+@media (max-width: 600px) {
+  header button {
+    font-size: var(--font-size-four);
+  }
+}

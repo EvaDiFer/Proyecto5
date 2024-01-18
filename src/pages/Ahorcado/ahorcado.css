@@ -1,0 +1,124 @@
+.divword {
+  display: flex;
+
+  gap: var(--gap-s);
+  margin: var(--margin-m);
+}
+.divword > div {
+  border-bottom: 2px solid var(--color-1);
+  width: 40px;
+  margin-top: 1rem;
+}
+.divword > div > h3 {
+  opacity: 0;
+  text-align: center;
+  overflow: hidden;
+  transition: all 1s;
+  color: var(--bg-color);
+}
+.divword > div > .includes {
+  opacity: 1;
+  font-size: var(--font-size-ter);
+}
+
+.divalphabet {
+  display: flex;
+  gap: var(--gap-xs);
+  margin: var(--margin-xxs);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.divalphabet > button {
+  cursor: pointer;
+  border-radius: var(--secondary-br);
+  color: var(--color-3);
+  background-color: var(--color-1);
+  padding: var(--padding-xxs) var(--padding-xs);
+  transition: all 0.5s;
+  font-size: var(--font-size-ter);
+  border: 2px solid var(--color-1);
+}
+.divalphabet > button:hover {
+  background-color: var(--bg-color);
+  /* border: 2px solid var(--color-4); */
+}
+.ultimodiv {
+  display: flex;
+  width: 100%;
+  margin: var(--margin-xs);
+  gap: var(--gap-m);
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ultimodiv img {
+  width: 200px;
+}
+.ultimodiv div {
+  font-size: var(--font-size-ter);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  justify-content: center;
+  align-items: center;
+}
+.ultimodiv h3 {
+  font-size: var(--font-size-ter);
+  color: var(--color-1);
+}
+
+.playAgain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-2);
+  font-size: var(--font-size-sec);
+}
+
+.restartButton {
+  margin-top: 10px;
+  font-size: 20px;
+  padding: var(--padding-xs);
+  background-color: var(--color-1);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .divword {
+    flex-direction: row;
+    align-items: center;
+  }
+  .divword > div {
+    width: 20%;
+  }
+  .divword > div > h3 {
+    opacity: 0;
+  }
+
+  .divalphabet {
+    width: 100%;
+  }
+
+  .ultimodiv {
+    flex-direction: row;
+    align-items: center;
+  }
+  .ultimodiv img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .playAgain {
+    font-size: var(--font-size-ter);
+  }
+
+  .restartButton {
+    font-size: 16px;
+  }
+
+  .ultimodiv h3 {
+    font-size: var(--font-size-four);
+    margin-left: 1rem;
+  }
+}

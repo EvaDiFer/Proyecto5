@@ -1,0 +1,100 @@
+.cardsContain {
+  display: flex;
+  gap: var(--gap-xxs);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+.divCard {
+  width: 100%;
+  max-width: 100px;
+  height: 110px;
+  cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+  margin: 0.5rem;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  user-select: none;
+  pointer-events: none;
+}
+.front {
+  background-color: var(--color-4);
+  background-image: url('/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.back {
+  transform: rotateY(-180deg);
+}
+.back > img {
+  width: 100%;
+  height: 100%;
+}
+.divCard.clicked .front {
+  transform: rotateY(180deg);
+}
+.divCard.clicked .back {
+  transform: rotateY(0);
+}
+.divCard.spin {
+  animation: spin 0.3s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.points {
+  font-size: var(--font-size-ter);
+  padding: var(--padding-xxs);
+  text-align: center;
+}
+.restart {
+  font-size: var(--font-size-ter);
+  border: none;
+  background-color: var(--color-2);
+  padding: var(--padding-xxs);
+  color: var(--color-3);
+  background-color: var(--color-1);
+}
+@media (max-width: 890px) {
+  .boardMemory {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .divCard {
+    width: 90px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 675px) {
+  .divCard {
+    width: 60px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 340px) {
+  .divCard {
+    width: 50px;
+    height: 70px;
+  }
+}
