@@ -119,7 +119,7 @@ export const Ahorcado = () => {
     h2Play.appendChild(restartButton);
   };
   const gameOver = () => {
-    image.src = '/public/img7.png';
+    image.src = '/img7.png';
     divWord.textContent = '';
     divAlphabet.textContent = '';
     wrongLetters.textContent = '';

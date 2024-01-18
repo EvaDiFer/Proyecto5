@@ -25,6 +25,7 @@
 }
 .initDescription {
   font-size: var(--font-size-sec);
+  text-align: center;
 }
 
 .socialLinksContainer {
